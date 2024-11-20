@@ -1,0 +1,166 @@
+body {
+    font-family: Georgia, Verdana;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right,#DF4BF2, #0756F2,#023373,#05C7F2,#41BF91);
+    color: cornsilk;
+    text-shadow: 1px 2px 4px rgb(13, 11, 12);
+}
+
+header {
+    background-image: linear-gradient(to right,#DF4BF2, #0756F2,#023373,#05C7F2,#41BF91);
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgb(0, 6, 171);
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+#introduction {
+    color: #ffffff;
+    text-shadow: 1px 2px 1.5px rgb(13, 11, 12);
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+#projects {
+    padding: 20px;
+    background-color: #f1fffa;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: black;
+    text-shadow: none;
+    text-align: center;
+}
+
+.project {
+    background-color: #ffffff;
+    border: 1px solid #DF4BF2;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 7px;
+    flex: 5 5 calc(50% - 40px); /* Adjust the percentage to control the number of items per row */
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-preview {
+    text-align: center;
+}
+
+.project-preview img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.project-preview p {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.see-more {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 149);
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.see-more:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+
+.see-more {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #4cb4ff;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.see-more span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 1s;
+}
+
+.see-more span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 1;
+    top: 1;
+    right: -20px;
+    transition: 1s;
+}
+
+.see-more:hover span {
+    padding-right: 1px;
+}
+
+.see-more:hover span:after {
+    opacity: 1;
+    right: 5;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
